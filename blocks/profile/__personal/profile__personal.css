@@ -1,0 +1,16 @@
+.profile__personal {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 16px;
+  max-width: 336px;
+}
+
+@media screen and (max-width: 900px) {
+  .profile__personal {
+    gap: 10px;
+    max-width: 282px;
+    justify-content: space-between;
+    margin-bottom: 14px;
+  }
+}

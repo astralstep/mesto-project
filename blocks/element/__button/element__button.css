@@ -1,0 +1,29 @@
+.element__button {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.element__button + .element__pseudo-item {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.element__button + .element__pseudo-item::before {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 19px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../../../images/element-like.svg);
+  transition: opacity linear 0.2s;
+}
+
+.element__button:checked + .element__pseudo-item::before {
+  background-image: url(../../../images/checked-like.svg);
+}
+
+.element__button:hover + .element__pseudo-item::before {
+  opacity: 0.5;
+}
