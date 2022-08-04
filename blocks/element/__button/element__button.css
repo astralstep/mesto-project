@@ -8,6 +8,7 @@
   min-height: 19px;
   padding: 0;
   transition: opacity linear 0.2s;
+  cursor: pointer;
 }
 
 .element__button:hover {
