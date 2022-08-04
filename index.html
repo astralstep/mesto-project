@@ -31,64 +31,58 @@
                         <img class="element__image" src="./images/element-castle.jpg" alt="Заброшенная часовня у подножья гор.">
                         <div class="element__description">
                             <h2 class="element__title">Карачаевск</h2>
-                            <input type="checkbox" class="element__button" id="like-castle" name="like"></button>
-                            <label for="like-castle" class="element__pseudo-item"></label>
+                            <button type="button" class="element__button"></button>
                         </div>
                     </li>
                     <li class="element__item">
                         <img class="element__image" src="./images/element-sunshine.jpg" alt="Закат на фоне гор.">
                         <div class="element__description">
                             <h2 class="element__title">Гора Эльбрус</h2>
-                            <input type="checkbox" class="element__button" id="like-field" name="like"></button>
-                            <label for="like-field" class="element__pseudo-item"></label>
+                            <button type="button" class="element__button"></button>
                         </div>
                     </li>
                     <li class="element__item">
                         <img class="element__image" src="./images/element-hills.jpg" alt="Горные склоны.">
                         <div class="element__description">
                             <h2 class="element__title">Домбай</h2>
-                            <input type="checkbox" class="element__button" id="like-hill" name="like"></button>
-                            <label for="like-hill" class="element__pseudo-item"></label>
+                            <button type="button" class="element__button"></button>
                         </div>
                     </li>
                     <li class="element__item">
                         <img class="element__image" src="./images/element-sunshine.jpg"" alt="Закат на фоне гор.">
                         <div class="element__description">
                             <h2 class="element__title">Гора Эльбрус</h2>
-                            <input type="checkbox" class="element__button" id="like-elbrus" name="like"></button>
-                            <label for="like-elbrus" class="element__pseudo-item"></label>
+                            <button type="button" class="element__button"></button>
                         </div>
                     </li>
                     <li class="element__item">
                         <img class="element__image" src="./images/element-hills.jpg" alt="Горные склоны.">
                         <div class="element__description">
                             <h2 class="element__title">Домбай</h2>
-                            <input type="checkbox" class="element__button" id="like-dombai" name="like"></button>
-                            <label for="like-dombai" class="element__pseudo-item"></label>
+                            <button type="button" class="element__button"></button>
                         </div>
                     </li>
                     <li class="element__item">
                         <img class="element__image" src="./images/element-castle.jpg" alt="Заброшенная часовня у подножья гор.">
                         <div class="element__description">
                             <h2 class="element__title">Карачаево-Черкесия</h2>
-                            <input type="checkbox" class="element__button" id="like-church" name="like"></button>
-                            <label for="like-church" class="element__pseudo-item"></label>
+                            <button type="button" class="element__button"></button>
                         </div>
                     </li>
                 </ul>
             </section>
-            <section class="popup">
-                <div class="popup__container">
-                    <h2 class="popup__title">Редактировать профиль</h2>
-                    <form class="popup__form">
-                        <input class="popup__form-item" type="text" name="name" placeholder="Жак-Ив Кусто">
-                        <input class="popup__form-item" type="text" name="description" placeholder="Исследователь океана">
-                        <button class="popup__save" type="submit">Сохранить</button>
-                    </form>
-                    <button class="popup__close" type="button"></button>
-                </div>
-            </section>
         </main>
+        <section class="popup popup_opened">
+            <div class="popup__container">
+                <h2 class="popup__title">Редактировать профиль</h2>
+                <form class="popup__form" name="edit-form">
+                    <input class="popup__form-item" type="text" name="name" placeholder="Жак-Ив Кусто">
+                    <input class="popup__form-item" type="text" name="description" placeholder="Исследователь океана">
+                    <button class="popup__save" type="submit">Сохранить</button>
+                </form>
+                <button class="popup__close" type="button"></button>
+            </div>
+        </section>
         <footer class="footer">
             <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
         </footer>
