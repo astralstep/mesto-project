@@ -1,0 +1,16 @@
+.popup__fullscreen-caption {
+  position: absolute;
+  bottom: -22px;
+  left: 0px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(255, 255, 255, 1);
+}
+
+@media screen and (max-width: 900px) {
+  .popup__fullscreen-caption {
+    left: 21px;
+    bottom: -22px;
+  }
+}

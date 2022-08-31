@@ -1,91 +1,107 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mesto</title>
-    <link rel="stylesheet" href="pages/index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="pages/index.css" />
+  </head>
+  <body>
     <div class="page">
-        <header class="header">
-            <img class="header__logo" src="./images/header-logo.svg" alt="Логотип страницы">
-        </header>
-        <main class="content">
-            <section class="profile">
-                <div class="profile__acc">
-                    <img class="profile__image" src="./images/profile-image.png" alt="Аватар пользователя.">
-                    <div class="profile__info">
-                        <div class="profile__personal">
-                            <h1 class="profile__name">Жак-Ив Кусто</h1>
-                            <button class="profile__edit-button" type="button"></button>
-                        </div>
-                        <p class="profile__caption">Исследователь океана</p>
-                    </div>
-                </div>
-                <button type="button" class="profile__add-button"></button>
-            </section>
-            <section class="elements">
-                <ul class="element">
-                    <li class="element__item">
-                        <img class="element__image" src="./images/element-castle.jpg" alt="Заброшенная часовня у подножья гор.">
-                        <div class="element__description">
-                            <h2 class="element__title">Карачаевск</h2>
-                            <button type="button" class="element__button"></button>
-                        </div>
-                    </li>
-                    <li class="element__item">
-                        <img class="element__image" src="./images/element-sunshine.jpg" alt="Закат на фоне гор.">
-                        <div class="element__description">
-                            <h2 class="element__title">Гора Эльбрус</h2>
-                            <button type="button" class="element__button"></button>
-                        </div>
-                    </li>
-                    <li class="element__item">
-                        <img class="element__image" src="./images/element-hills.jpg" alt="Горные склоны.">
-                        <div class="element__description">
-                            <h2 class="element__title">Домбай</h2>
-                            <button type="button" class="element__button"></button>
-                        </div>
-                    </li>
-                    <li class="element__item">
-                        <img class="element__image" src="./images/element-sunshine.jpg" alt="Закат на фоне гор.">
-                        <div class="element__description">
-                            <h2 class="element__title">Гора Эльбрус</h2>
-                            <button type="button" class="element__button"></button>
-                        </div>
-                    </li>
-                    <li class="element__item">
-                        <img class="element__image" src="./images/element-hills.jpg" alt="Горные склоны.">
-                        <div class="element__description">
-                            <h2 class="element__title">Домбай</h2>
-                            <button type="button" class="element__button"></button>
-                        </div>
-                    </li>
-                    <li class="element__item">
-                        <img class="element__image" src="./images/element-castle.jpg" alt="Заброшенная часовня у подножья гор.">
-                        <div class="element__description">
-                            <h2 class="element__title">Карачаево-Черкесия</h2>
-                            <button type="button" class="element__button"></button>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-        </main>
-        <section class="popup">
-            <div class="popup__container">
-                <h2 class="popup__title">Редактировать профиль</h2>
-                <form class="popup__form" name="edit-form">
-                    <input class="popup__form-item" type="text" name="name" placeholder="Жак-Ив Кусто">
-                    <input class="popup__form-item" type="text" name="description" placeholder="Исследователь океана">
-                    <button class="popup__save" type="submit">Сохранить</button>
-                </form>
-                <button class="popup__close" type="button"></button>
+      <header class="header">
+        <img
+          class="header__logo"
+          src="./images/header-logo.svg"
+          alt="Логотип страницы"
+        />
+      </header>
+      <main class="content">
+        <section class="profile">
+          <div class="profile__acc">
+            <img
+              class="profile__image"
+              src="./images/profile-image.png"
+              alt="Аватар пользователя."
+            />
+            <div class="profile__info">
+              <div class="profile__personal">
+                <h1 class="profile__name">Жак-Ив Кусто</h1>
+                <button class="profile__edit-button" type="button"></button>
+              </div>
+              <p class="profile__caption">Исследователь океана</p>
             </div>
+          </div>
+          <button type="button" class="profile__add-button"></button>
         </section>
-        <footer class="footer">
-            <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
-        </footer>
+        <section class="elements">
+          <ul class="element"></ul>
+        </section>
+      </main>
+      <section class="popup popup_background" id="edit-popup">
+        <div class="popup__container">
+          <h2 class="popup__title">Редактировать профиль</h2>
+          <form class="popup__form" name="edit-form">
+            <input
+              class="popup__form-item"
+              type="text"
+              name="nameof"
+              placeholder="Жак-Ив Кусто"
+            />
+            <input
+              class="popup__form-item"
+              type="text"
+              name="description"
+              placeholder="Исследователь океана"
+            />
+            <button class="popup__save" type="submit">Сохранить</button>
+          </form>
+          <button class="popup__close" type="button"></button>
+        </div>
+      </section>
+      <section class="popup popup_background" id="add-popup">
+        <div class="popup__container">
+          <h2 class="popup__title">Новое место</h2>
+          <form class="popup__form" name="add-form" id="add-form">
+            <input
+              class="popup__form-item"
+              type="text"
+              name="nameof"
+              placeholder="Название"
+            />
+            <input
+              class="popup__form-item"
+              type="text"
+              name="link"
+              placeholder="Ссылка на картинку"
+            />
+            <button class="popup__save" type="submit">Сохранить</button>
+          </form>
+          <button class="popup__close" type="button"></button>
+        </div>
+      </section>
+      <section class="popup" id="full">
+        <div class="popup__container popup__container_invisicle">
+          <figure class="popup__fullscreen-container">
+            <button class="popup__fullscreen-close" type="button"></button>
+            <img class="popup__fullscreen-image" alt="" src="#" />
+            <figcaption class="popup__fullscreen-caption"></figcaption>
+          </figure>
+        </div>
+      </section>
+      <footer class="footer">
+        <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
+      </footer>
     </div>
-</body>
+    <template id="card-template">
+      <li class="element__item">
+        <img src="#" class="element__image" />
+        <button class="element__delete-item" type="button"></button>
+        <div class="element__description">
+          <h2 class="element__title"></h2>
+          <button type="button" class="element__button"></button>
+        </div>
+      </li>
+    </template>
+    <script src="./scripts/index.js"></script>
+  </body>
 </html>
